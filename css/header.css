@@ -1,0 +1,228 @@
+:root {
+  --grayColor: #c3c5c8;
+  --blackColor: #000;
+  --whiteColor: #fff;
+  --yellowColor: #ffcb31;
+  --baseColor: #1dbf73;
+  --redColor: #ff5353;
+}
+.container-shadow {
+  box-shadow: 5px 5px 50px rgba(32, 32, 32, 0.07);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: auto;
+  margin-bottom: 2.4rem;
+  border: thin solid var(--whiteColor);
+}
+header.container-shadow p:first-child {
+  color: rgba(134, 146, 166, 1);
+  font-weight: 400;
+  font-size: 1rem;
+}
+i.choice-service {
+  color: var(--whiteColor) !important;
+  cursor: pointer;
+  background-color: var(--whiteColor) !important;
+  border: thin solid gray;
+}
+header.container-shadow p:nth-child(2) {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+}
+header.container-shadow article {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(230, 234, 239, 1);
+  font-size: 1.5rem;
+  width: 100%;
+}
+header.container-shadow article span {
+  color: rgba(134, 146, 166, 1);
+  font-size: 1rem;
+}
+header.container-shadow article div i {
+  color: rgb(224, 226, 228);
+  margin: 0.1rem;
+  font-size: 1rem;
+}
+header.container-shadow article i.fav {
+  color: var(--yellowColor);
+}
+header.container-shadow article div:nth-child(2) i {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.banner {
+  position: relative;
+}
+.banner i {
+  position: absolute;
+  z-index: 10;
+  box-shadow: rgb(32, 32, 32);
+  background-color: var(--whiteColor);
+  border-radius: 50%;
+  padding: 0.2rem 0.4rem;
+  color: var(--baseColor);
+  opacity: 0.6;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.banner i:hover {
+  opacity: 1;
+}
+.banner i.fa-angle-left {
+  left: 4%;
+  transform: translateX(-50%);
+}
+.banner i.fa-angle-right {
+  left: 96%;
+  transform: translateX(-50%);
+}
+.banner img {
+  width: 100%;
+}
+div.descraption p {
+  margin-top: 0.9rem;
+  font-weight: 500;
+  color: rgba(51, 51, 51, 1);
+  text-align: justify;
+}
+.container-shadow {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 1.3rem;
+}
+.container-shadow i.fa-circle {
+  color: rgb(195, 197, 200);
+  font-size: 1.4rem;
+  margin-right: 1rem;
+}
+.container-shadow i.fa-circle-check {
+  color: var(--baseColor);
+  font-size: 1.4rem;
+  margin-right: 1rem;
+}
+div.services h4 {
+  display: flex;
+  justify-content: space-between;
+}
+div.services p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+p.select-all {
+  color: rgb(195, 197, 200);
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+p.select-all i {
+  margin-right: 0.5rem;
+}
+div.services .container-shadow p:nth-child(2) span {
+  margin: 0 0.5rem;
+  color: var(--baseColor);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: rgba(233, 249, 241, 1);
+}
+.service-purchase span {
+  font-weight: 600;
+  font-size: 1rem;
+}
+article.purchase-service {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  justify-items: start;
+  gap: 1rem;
+  width: 100%;
+}
+div.purchase-service-container {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  flex-grow: 3;
+}
+div.purchase-service-counter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 0.5rem 2rem;
+}
+div.purchase-service-container div {
+  background-color: rgba(246, 246, 246, 1);
+  border-radius: 0.5rem;
+}
+div.purchase-service-container > span {
+  display: inline-block;
+  background-color: rgba(246, 246, 246, 1);
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.5rem;
+  margin-left: 0.3rem;
+}
+article.purchase-service button.btn-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--baseColor);
+  font-weight: 500;
+  box-shadow: 5px 5px 50px rgba(186, 181, 181, 0.2);
+  border-radius: 50%;
+  padding: 0 0.5rem;
+  background-color: var(--whiteColor);
+  font-size: 1.5rem;
+}
+article.purchase-service > button {
+  padding: 0.7rem 1rem;
+  background-color: var(--baseColor);
+  color: var(--whiteColor);
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 0.9rem;
+  justify-content: right;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  main > div.container > section {
+    width: 65%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  div.purchase-service-counter {
+    justify-content: space-around;
+    gap: 4rem;
+    padding: 0.5rem 2rem;
+  }
+  div.purchase-service-container > span {
+    padding: 0.7rem 2rem;
+  }
+  article.purchase-service > button {
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  div.purchase-service-counter {
+    padding: 0.5rem 4.5rem;
+  }
+  div.purchase-service-container > span {
+    padding: 0.7rem 2.2rem;
+  }
+}
+@media (min-width: 1400px) {
+}

@@ -1,0 +1,188 @@
+:root {
+  --grayColor: #c3c5c8;
+  --blackColor: #000;
+  --whiteColor: #fff;
+  --yellowColor: #ffcb31;
+  --baseColor: #1dbf73;
+  --redColor: #ff5353;
+}
+main div.service-rating {
+  margin-top: 5rem;
+}
+main div.service-rating i {
+  color: var(--yellowColor);
+}
+main div.service-rating h4 i {
+  margin-right: 0.5rem;
+}
+.service-rating div.container-shadow {
+  font-weight: 600;
+}
+article.rating-details {
+  margin-top: 1.3rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  text-wrap: nowrap;
+}
+article.rating-details div.title-job {
+  display: flex;
+  flex-wrap: nowrap;
+  text-wrap: nowrap;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
+article.rating-details div.title-job i {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.title-job i span {
+  margin: 0 0.3rem;
+  color: var(--blackColor);
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+article.rating-details .star-rating {
+  padding: 0;
+  margin: 0;
+  justify-self: end;
+}
+article.rating-details .star-rating i {
+  font-size: 0.8rem;
+  padding: 0;
+  margin: 0;
+}
+article.rating-details .star-rating i:last-child {
+  color: rgb(224, 226, 228);
+}
+div.Progress {
+  display: none;
+}
+div.review-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+div.review-card h5 {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+div.review-card i {
+  font-size: 0.8rem;
+  padding: 0;
+  margin: 0;
+}
+div.review-card i.notfav {
+  color: rgb(224, 226, 228);
+}
+div.review-card span {
+  font-size: 0.8rem;
+  color: rgb(203, 205, 207);
+  font-weight: 400;
+}
+div.review-card p {
+  font-weight: 400;
+  margin-top: 1rem;
+}
+div.create-review {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+}
+div.create-review div:nth-child(2) {
+  flex-grow: 3;
+}
+div.create-review {
+  width: 100%;
+  margin-top: 2.5rem;
+}
+div.create-review input {
+  position: relative; /* Ensure relative positioning for the input */
+  width: 100%;
+  margin-bottom: 0.8rem;
+  border: none;
+  background-color: rgb(246, 246, 246);
+  border-radius: 1rem;
+  height: 10rem;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+div.create-review input::placeholder {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+div.create-review button {
+  padding: 0.7rem 2rem;
+  background-color: var(--baseColor);
+  color: var(--whiteColor);
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.display-no-review {
+  color: var(--redColor);
+  margin-bottom: 0.5rem;
+}
+.show-review {
+  display: none !important;
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+  article.rating-details {
+    grid-template-columns: 2fr 1fr 1fr;
+    justify-content: space-between;
+    column-gap: 0.4rem;
+  }
+
+  div.Progress {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.6rem;
+  }
+  progress {
+    color: var(--yellowColor);
+    font-size: 0.6em;
+    line-height: 1.5em;
+    text-indent: 0.5em;
+    width: 14em;
+    background-color: rgb(230, 234, 239);
+    border-radius: 1rem;
+  }
+  progress::-webkit-progress-bar {
+    background-color: rgb(230, 234, 239);
+    border-radius: 1rem;
+  }
+  progress::-webkit-progress-value {
+    background: var(--yellowColor);
+    border-radius: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  article.rating-details .star-rating {
+    justify-self: start;
+  }
+  article.rating-details div.title-job {
+    font-size: 0.9rem;
+  }
+  article.rating-details div.title-job i {
+    font-size: 0.9rem;
+  }
+  div.title-job i span {
+    font-size: 0.9rem;
+  }
+  article.rating-details .star-rating i {
+    font-size: 0.9rem;
+  }
+}

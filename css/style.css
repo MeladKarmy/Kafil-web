@@ -1,0 +1,119 @@
+:root {
+  --grayColor: #c3c5c8;
+  --blackColor: #000;
+  --whiteColor: #fff;
+  --yellowColor: #ffcb31;
+  --baseColor: #1dbf73;
+  --redColor: #ff5353;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline-style: none;
+  text-decoration: none;
+}
+html {
+  font-size: 16px;
+  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana,
+    "sans-serif";
+  scroll-behavior: smooth;
+  transition: all 1s;
+}
+body {
+  transition: all 1s;
+}
+.container {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+button,
+a {
+  cursor: pointer;
+  border: none;
+}
+h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+main {
+  margin-top: 5rem;
+}
+.show-nav {
+  display: none;
+}
+.show-menu {
+  display: none;
+}
+.active {
+  color: var(--baseColor) !important;
+}
+.toggle-switch {
+  width: 30px;
+  height: 18px;
+  position: relative;
+  cursor: pointer;
+}
+
+.toggle-circle {
+  transition: transform 0.5s ease;
+}
+
+.toggle-switch.active .toggle-circle {
+  transform: translateX(10px);
+}
+.toggle-switch.active rect {
+  fill: var(--baseColor);
+}
+.dark {
+  background-color: #000;
+  color: #c3c5c8;
+}
+/* .shadow-dark {
+  box-shadow: 5px 5px 50px rgba(185, 36, 36, 0.07) !important;
+  border: 10rem solid red !important;
+} */
+.like {
+  color: var(--redColor) !important;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+  body > main .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 0.3rem;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    width: 930px;
+  }
+  .show-nav {
+    display: flex;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1340px;
+  }
+}

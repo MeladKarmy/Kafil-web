@@ -1,0 +1,107 @@
+:root {
+  --grayColor: #c3c5c8;
+  --blackColor: #000;
+  --whiteColor: #fff;
+  --yellowColor: #ffcb31;
+  --baseColor: #1dbf73;
+  --redColor: #ff5353;
+}
+section.suggested-services h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+article.container-card figure {
+  padding: 0;
+}
+article.container-card figure span {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+article.container-card figure > div {
+  width: 100%;
+  position: relative;
+}
+article.container-card figure > div i {
+  position: absolute;
+  background-color: var(--whiteColor);
+  color: rgb(134, 146, 166);
+  top: 10%;
+  left: 5%;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+article.container-card figure > div img {
+  width: 100%;
+}
+article.container-card figure figcaption {
+  padding: 0 0.7rem;
+  font-size: 1rem;
+  width: 100%;
+}
+article.container-card figure figcaption div {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  color: rgb(134, 146, 166);
+}
+article.container-card figure figcaption div i.fa-cart-shopping {
+  color: rgb(134, 146, 166);
+  font-size: 1rem;
+}
+article.container-card figure figcaption div i.fa-star {
+  color: var(--yellowColor);
+  font-size: 1rem;
+}
+figcaption div.avatar {
+  justify-content: space-between;
+}
+figcaption div.avatar span {
+  margin-left: 1rem;
+  color: var(--blackColor);
+  font-size: 0.9rem;
+}
+figcaption div.avatar p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+figcaption div.avatar p i {
+  padding: 0;
+  margin: 0;
+}
+figcaption div.avatar p span {
+  padding: 0 0.4rem;
+  margin: 0;
+  color: var(--blackColor);
+  font-weight: 600;
+  box-shadow: none;
+}
+figcaption div.avatar p span.text-white {
+  color: var(--whiteColor);
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  article.container-card {
+    display: grid;
+    column-gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  article.container-card {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+}
