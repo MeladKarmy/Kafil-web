@@ -132,6 +132,9 @@ div.services .container-shadow p:nth-child(2) span {
   font-weight: 500;
   background-color: rgba(233, 249, 241, 1);
 }
+.service-purchase .container-shadow {
+  padding: 0.5rem;
+}
 .service-purchase span {
   font-weight: 600;
   font-size: 1rem;
@@ -147,15 +150,14 @@ article.purchase-service {
 div.purchase-service-container {
   display: flex;
   align-items: center;
-  gap: 0.2rem;
   flex-grow: 3;
 }
 div.purchase-service-counter {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 2.5rem;
-  padding: 0.5rem 2rem;
+  gap: 1.2rem;
+  padding: 0.3rem 0.8rem;
 }
 div.purchase-service-container div {
   background-color: rgba(246, 246, 246, 1);
@@ -164,7 +166,7 @@ div.purchase-service-container div {
 div.purchase-service-container > span {
   display: inline-block;
   background-color: rgba(246, 246, 246, 1);
-  padding: 0.7rem 1.5rem;
+  padding: 0.5rem 0.5rem;
   border-radius: 0.5rem;
   margin-left: 0.3rem;
 }
@@ -184,12 +186,12 @@ article.purchase-service button.btn-count {
   font-size: 1.5rem;
 }
 article.purchase-service > button {
-  padding: 0.7rem 1rem;
+  padding: 0.6rem 0.5rem;
   background-color: var(--baseColor);
   color: var(--whiteColor);
   border-radius: 0.5rem;
   border: none;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   justify-content: right;
 }
 
@@ -202,6 +204,10 @@ article.purchase-service > button {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .service-purchase .container-shadow {
+    padding: 1.5rem;
+  }
+
   div.purchase-service-counter {
     justify-content: space-around;
     gap: 4rem;
